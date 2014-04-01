@@ -1,54 +1,10 @@
-<!DOCTYPE html>
-<html lang="pt-br">
-  <head>
-    <title>Magno Valdetaro</title>
-
-    <!-- Meta -->
-    <meta charset="utf-8"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <meta name="description" content="" />
-
-    <!-- Facebook -->
-    <meta property="og:title" content="Magno Valdetaro"/>
-    <meta property="og:site_name" content="Magno Valdetaro"/>
-    <meta property="og:url" content="http://magnovaldetaro.com.br"/>
-    <meta property="og:image" content="http://magnovaldetaro.com.br/assets/img/fb-avatar.jpg"/>
-    <meta property="og:type" content="blog"/>
-    <meta property="og:description" content=""/>
-
-    <!-- Twitter Analytics -->
-    <meta property="twitter:account_id" content="15278873" />
-
-    <!-- Favicon -->
-    <link rel="shortcut icon" href="/assets/favicon.ico" type="image/x-icon" />
-
-    <!-- Font -->
-    <link href='http://fonts.googleapis.com/css?family=Droid+Serif' rel='stylesheet' type='text/css'>
-
-    <!-- Feed -->
-    <link rel="alternate" type="application/rss+xml" href="http://feeds.feedburner.com/mvaldetaro">
-
-    <!-- CSS -->
-    <link rel="stylesheet" href="/assets/css/normalize.css" type="text/css" />
-    <link rel="stylesheet" href="/assets/css/main.css" type="text/css" />
-
-    <!-- jQuery -->
-    <script type='text/javascript' src='http://ajax.googleapis.com/ajax/libs/jquery/1.4/jquery.min.js'></script>
-
-    <!-- Modernizr -->
-    <script src='//cdnjs.cloudflare.com/ajax/libs/modernizr/2.7.1/modernizr.dev.js'></script>
-
-  </head>
-  <body>
+{% include header.html %}
     <div id="container">
       <header class="group">
-        <h1 class="logo"><a href="/">Magno Valdetaro</a></h1>
+        <h1 class="logo"><a href="/">dev\MAGNOVALDETARO</a></h1>
       </header>
       <div id="content">
         {{ content }}
       </div>
     </div>
-    {% include footer.html %}
-
-  </body>
-</html>
+{% include footer.html %}

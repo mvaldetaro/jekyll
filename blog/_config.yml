@@ -1,0 +1,10 @@
+# Encode
+encoding: UTF-8
+
+# GitHub Defaults
+lsi: false
+pygments: true
+safe: true
+
+# UTF-8 & parse errors fix
+markdown: redcarpet
