@@ -1,3 +1,5 @@
 blog/*.swp
 _site/
 _drafts/
+
+layout/
