@@ -3,3 +3,5 @@ _site/
 _drafts/
 
 layout/
+node_modules
+bower_components
