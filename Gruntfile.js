@@ -8,7 +8,7 @@ grunt.initConfig({
         compress: true
       },
       files: {
-        "blog/assets/css/bootstrap.min.css": "blog/assets/less/bootstrap.less"
+        "blog/assets/css/main.min.css": "blog/assets/less/main.less"
       }
     }
   },
