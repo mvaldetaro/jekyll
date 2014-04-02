@@ -1,8 +1,28 @@
 {% include head.html %}
-    <div class="container">
-      {% include header.html %}
-      <div id="content">
-        {{ content }}
-      </div>
-    </div>
+  <div class="container">
+  {% include header.html %}
+    <aside>
+      <img src="assets/images/avatar-magno-valdetaro.jpg" alt="Magno Valdetaro">
+      <h1>
+        <a href="/">
+          <span>Magno Valdetaro</span>
+        </a>
+      </h1>
+      <nav class="social">
+        <ul>
+          <li><a class="twitter" href="http://twitter.com/m9valdetaro">Twitter</a></li>
+          <li><a class="facebook" href="http://www.facebook.com/valdetaro">Facebook</a></li>
+          <li><a class="behance" href="https://www.behance.net/mvaldetaroc321">Behance</a></li>
+          <li><a class="github" href="https://github.com/mvaldetaro">Github</a></li>
+          <li><a class="email" href="mailto:oi@magnovaldetaro.com.br">Email</a></li>
+          <li><a class="rss" href="http://feeds.feedburner.com/magnovaldetaro">RSS Feed</a></li>
+        </ul>
+      </nav>
+    </aside>
+    <section id="content" class="recent-posts">
+      {% for post in site.posts limit:20 %}
+      {% include post_detail.html %}
+      {% endfor %}
+    </section>
+  </div>
 {% include footer.html %}
