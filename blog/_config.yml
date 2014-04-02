@@ -1,3 +1,6 @@
+#Links
+permalink: /blog/:title
+
 # Encode
 encoding: UTF-8
 
