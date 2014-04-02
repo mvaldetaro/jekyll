@@ -1,0 +1,10 @@
+{% include head.html %}
+    <div class="container">
+      {% include header.html %}
+      <div id="content">
+        {% assign post = site.posts.first %}
+        {% assign content = post.content %}
+        {% include post_home.html %}
+      </div>
+    </div>
+{% include footer.html %}
