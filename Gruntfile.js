@@ -4,11 +4,11 @@ grunt.initConfig({
   less: {
     development: {
       options: {
-        paths: ["assets/css"],
+        paths: ["blog/assets/css"],
         compress: true
       },
       files: {
-        "assets/css/main.min.css": "assets/less/main.less"
+        "blog/assets/css/bootstrap.min.css": "blog/assets/less/bootstrap.less"
       }
     }
   },
@@ -30,7 +30,7 @@ grunt.loadNpmTasks('grunt-contrib-less');
 grunt.loadNpmTasks('grunt-contrib-copy');
 grunt.loadNpmTasks('grunt-exec');
 
-grunt.registerTask('default', [ 'less', 'exec:build', 'exec:serve' ]);
+grunt.registerTask('default', [ 'less', 'exec:build']);
 grunt.registerTask('deploy', [ 'default', 'exec:deploy' ]);
 
 };
