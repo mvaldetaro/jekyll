@@ -1,0 +1,28 @@
+{
+  "name": "mvblog",
+  "version": "1.0.0",
+  "description": "Meu blog pessoal em Jekyll",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mvaldetaro/jekyll.git"
+  },
+  "keywords": [
+    "jekyll",
+    "flat",
+    "bootstrap",
+    "responsive"
+  ],
+  "author": "Magno Valdetaro",
+  "license": "BSD",
+  "bugs": {
+    "url": "https://github.com/mvaldetaro/jekyll/issues"
+  },
+  "dependencies": {
+    "grunt": "~0.4.4",
+    "grunt-contrib-less": "*",
+    "grunt-contrib-uglify": "*",
+    "grunt-contrib-copy": "*",
+    "bower": "*",
+    "grunt-exec": "*"
+  }
+}
