@@ -28,6 +28,9 @@
   <!-- /sidebar -->
   <!-- content -->
   <div class="container">
+  <div class="infinite-spinner">
+        <div class="loader"></div>
+      </div>
   {% include header.html %}
     <section id="content" class="recent-posts">
       {% for post in site.posts limit:10 %}
