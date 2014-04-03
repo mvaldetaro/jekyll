@@ -1,5 +1,6 @@
 #Links
 permalink: /blog/:title
+url: http://localhost:4000/
 
 # Encode
 encoding: UTF-8
