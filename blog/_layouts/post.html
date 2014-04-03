@@ -1,15 +1,48 @@
 {% include head.html %}
+<div class="warp">
+  <!-- sidebar -->
+  <aside class="sidebar">
+    <a href="#" class="menuToggle">
+      <span class="icon icon-menu"></span>
+    </a>
+    <figure class="avatar">
+      <img src="{{ site.url }}assets/images/avatar-magno-valdetaro.jpg" alt="Magno Valdetaro">
+    </figure>
+    <h1>
+      <a href="/">
+        <span><img src="{{ site.url }}assets/images/dark-logo.gif" alt="Magno Valdetaro"></span>
+      </a>
+    </h1>
+    <nav class="social">
+      <ul>
+        <li><a class="twitter" href="http://twitter.com/m9valdetaro"><span class="icon icon-twitter3"></span><b>Twitter</b></a></li>
+        <li><a class="facebook" href="http://www.facebook.com/valdetaro"><span class="icon icon-facebook3"><b>Facebook</b></a></li>
+        <li><a class="facebook" href="http://www.facebook.com/valdetaro"><span class="icon icon-linkedin"><b>Linkedin</b></a></li>
+        <li><a class="behance" href="https://www.behance.net/mvaldetaroc321"><span class="icon icon-behance"><b>Behance</b></a></li>
+        <li><a class="github" href="https://github.com/mvaldetaro"><span class="icon icon-github"><b>Github</b></a></li>
+        <li><a class="email" href="mailto:oi@magnovaldetaro.com.br"><span class="icon icon-mail"><b>Email</b></a></li>
+        <li><a class="rss" href="http://feeds.feedburner.com/magnovaldetaro"><span class="icon icon-feed3"><b>RSS Feed</b></a></li>
+      </ul>
+    </nav>
+  </aside>
+  <!-- /sidebar -->
+  <!-- content -->
   <div class="container">
-    {% include header.html %}
-    <div id="content">
-      <section id="main" class="group">
+  <div class="infinite-spinner">
+        <div class="loader"></div>
+      </div>
+  {% include header.html %}
+    <section id="content" class="post">
+      <article class="entry-content">
+        <span class="data">{{ page.date | date_to_string }}</span>
+        <h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
         {{ content }}
-        <div>
-          <a href="/">Voltar para Home</a>
-        </div>
-      </section>
-    </div>
+      </article>
+    </section>
   </div>
+  <!-- /content -->
+</div>
 {% include footer.html %}
+
 
 
