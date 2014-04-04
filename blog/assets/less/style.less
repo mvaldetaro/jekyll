@@ -1,3 +1,6 @@
+// Geral
+// =====================================================================
+
 body {
   font-family: 'Open Sans', sans-serif;
 }
@@ -6,13 +9,22 @@ body {
   height: 100%;
 }
 
+#content {
+  padding: 25px;
+}
+
+.infinite-spinner { position: relative; }
+
+// Sidebar
+// =====================================================================
+
 .sidebar {
   width: 376px;
   height: 100%;
   background: @midnight;
   position: fixed;
   top: 0;
-  left:0px;
+  transition: left 0.4s ease 0.1s;
   h1 {
     margin: 15px 0 0 0;
     font-size: 16px;
@@ -38,8 +50,6 @@ body {
       width: 170px;
       height: 170px;
       border: 13px solid #41515E;
-      //-webkit-box-shadow: 0 10px 10px 0 rgba(0,0,0,0.15);
-      //box-shadow: 0 10px 10px 0 rgba(0,0,0,0.15);
     }
   }
   .social {
@@ -62,9 +72,18 @@ body {
   }
 }
 
-#content {
-  padding: 25px;
+.sideHide {
+  left:-376px;
+  transition: left 0.4s ease 0.1s;
 }
+
+.sideShow {
+  left:0px;
+  transition: left 0.4s ease 0.1s;
+}
+
+// Recent Posts
+// =====================================================================
 
 .entry-content {
   padding-bottom: 25px;
@@ -105,6 +124,19 @@ body {
   }
 }
 
+// Post Layout
+// =====================================================================
+
+.post {
+  .title {
+    font-size: 42px;
+    font-weight: normal;
+  }
+}
+
+// Media Queries
+// =====================================================================
+
 @media (min-width: 320px) {
 
   .entry-content {
@@ -117,8 +149,8 @@ body {
 
 @media (min-width : 480px) {
 
-.entry-content {
-  p {
+  .entry-content {
+    p {
       line-height:24px;
     }
   }
@@ -127,8 +159,8 @@ body {
 
 @media (min-width : 720px) {
 
-.entry-content {
-  p {
+  .entry-content {
+    p {
       line-height:26px;
     }
   }
@@ -142,8 +174,8 @@ body {
 
 @media (min-width : 1200px) {
 
-.entry-content {
-  p {
+  .entry-content {
+    p {
       line-height:28px;
     }
   }
